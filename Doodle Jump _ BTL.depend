@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1743006558 source:c:\ccc\doodle jump _ btl\main.cpp
+	<SDL.h>
+	<iostream>
+	<vector>
+	<cstdlib>
+	<ctime>
+
+1744132394 source:c:\code by cb\doodle jump _ btl\main.cpp
+
