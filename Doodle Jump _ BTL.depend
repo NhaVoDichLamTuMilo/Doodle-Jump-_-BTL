@@ -6,5 +6,52 @@
 	<cstdlib>
 	<ctime>
 
-1744132394 source:c:\code by cb\doodle jump _ btl\main.cpp
+1745160936 source:c:\code by cb\doodle jump _ btl\main.cpp
+	"game.h"
+	"defs.h"
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+
+1745955352 source:c:\code by cb\doodle jump _ btl\bot.cpp
+	"bot.h"
+
+1745955391 c:\code by cb\doodle jump _ btl\bot.h
+	<SDL.h>
+
+1745946377 source:c:\code by cb\doodle jump _ btl\platform.cpp
+	"platform.h"
+
+1745945834 c:\code by cb\doodle jump _ btl\platform.h
+	<SDL.h>
+	<SDL_image.h>
+
+1746374657 source:c:\code by cb\doodle jump _ btl\game.cpp
+	"game.h"
+	"bot.h"
+	"platform.h"
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	<iostream>
+
+1746373982 c:\code by cb\doodle jump _ btl\game.h
+	<SDL.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"bot.h"
+	"menu.h"
+	"platform.h"
+
+1745250366 c:\code by cb\doodle jump _ btl\defs.h
+
+1745947356 source:c:\code by cb\doodle jump _ btl\menu.cpp
+	"menu.h"
+	<iostream>
+
+1745600403 c:\code by cb\doodle jump _ btl\menu.h
+	<SDL.h>
+	<SDL_image.h>
+	<string>
 

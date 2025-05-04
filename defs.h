@@ -2,8 +2,8 @@
 #define _DEFs__H
 
 //cua so
-#define SCREEN_WIDTH 1366
-#define SCREEN_HEIGHT 768
+#define SCREEN_WIDTH 550
+#define SCREEN_HEIGHT 600
 #define WINDOW_TITLE "Jack Jump"
 
 //timing
@@ -25,9 +25,9 @@
 #define PLATFORM_NUM 10
 
 //img sound
-#define BOT "image//JackBot.png"
-#define BACKGROUND "image//back.png"
-#define PLATFORM "image//green_platform.png"
+#define BOT "image/JackBot.png"
+#define BACKGROUND "image/background.png"
+#define PLATFORM "image/green_platform.png"
 
 
 

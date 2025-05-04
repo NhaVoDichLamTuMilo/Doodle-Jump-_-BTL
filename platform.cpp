@@ -1,16 +1,28 @@
+// platform.cpp
 #include "platform.h"
-#include <SDL.h>
 
-void Platform::render(SDL_Renderer* renderer){
-   SDL_Rect dst = { static_cast<int>(x),static_cast<int>(y), width, height};
-   SDL_RenderCopy(render,texture, NULL, &dst);
+void Platform::render(SDL_Renderer* renderer, float cameraY) {
+    SDL_Rect dst;
+    dst.x = static_cast<int>(x);
+    dst.y = static_cast<int>(y - cameraY) ;
+    dst.w = width;
+    dst.h = height;
+    SDL_RenderCopy(renderer, texture, nullptr, &dst);
 }
 
-void Platform::reset(float newX, float newY, int w, int h){
-  x = newX; // x moi
-  y = newY; // y moi
-  //update vi tri moi cua platform
+SDL_Rect Platform::getRect() const {
+    return SDL_Rect{
+        static_cast<int>(x),
+        static_cast<int>(y),
+        width,
+        height
+    };
+}
 
-  width = (w > 0 ) ? w : 60;
-  height = (h > 0) ? h : 20;
+void Platform::reset(float newX, float newY, int w, int h) {
+    x = newX;
+    y = newY;
+    width  = w;
+    height = h;
+    // texture giữ nguyên (được gán ở Game::init)
 }

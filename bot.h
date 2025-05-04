@@ -6,11 +6,14 @@
 struct Bot{
   float x, y; // vtri
   float vx, vy; //van toc
-  int width, height // size
-  SDL_Texture* texture // skin
+  int width, height; // size
+  SDL_Texture* texture ;// skin
+  float cameraY;
+  int screenHeight;
+  bool isOnPlatform;
 
-  void update(float dt);//update vtri
-  void render(SDL_Renderer);//render nvat
+  bool update(float dt, int screenWidth, float cameraY, int screenHeight);//update vtri
+  void render(SDL_Renderer* renderer, float cameraY);//render nvat
   void jump();//nhay
   SDL_Rect getRect() const;//lay hitbox
   void reset();//reset bot
